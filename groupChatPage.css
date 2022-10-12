@@ -6,16 +6,15 @@ h1 {
 }
 
 body {
-  background-image: url(Images/);
-}
-
-.topHeader {
-  background-color: red;
+  background-image: url(Images/images.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #heading {
 margin: auto;
 padding-left: 25%;
+color: white;
 }
 
 #topic {
