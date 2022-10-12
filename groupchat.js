@@ -57,12 +57,12 @@ drone.on('error', error => {
 });
 
 function getRandomName() {
-  const adjs = ["John", "Sean", "Jeffrey", "Ben", "Dean", "Harry", "Adrian", "Michael", "John-Uhn", "Obama", "Vladimir", "Lohhny", "Arnold", "Yomum", "Dwayne", "Sasha", "Daisy", "Mia", "Lana"];
-  const nouns = ["Smith", "Di Mario", "Ang", "Wang", "Raj", "Ladesh", "Coutin", "Chang", "Mao", "Chong", "Doe", "Hale", "Morales", "Norris", "Morris", "Johnson", "White", "Malkova", "Rhodes","Depp" ];
+  const Fname = ["John", "Sean", "Jeffrey", "Ben", "Dean", "Harry", "Adrian", "Michael", "John-Uhn", "Obama", "Vladimir", "Lohhny", "Arnold", "Yomum", "Dwayne", "Sasha", "Daisy", "Mia", "Lana"];
+  const Lname = ["Smith", "Di Mario", "Ang", "Wang", "Raj", "Ladesh", "Coutin", "Chang", "Mao", "Chong", "Doe", "Hale", "Morales", "Norris", "Morris", "Johnson", "White", "Malkova", "Rhodes","Depp" ];
   return (
-    adjs[Math.floor(Math.random() * adjs.length)] +
+    Fname[Math.floor(Math.random() * Fname.length)] +
     " " +
-    nouns[Math.floor(Math.random() * nouns.length)]
+    Lname[Math.floor(Math.random() * Lname.length)]
   );
 }
 
