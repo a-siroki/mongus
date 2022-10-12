@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lnag="en">
+<html lang="en">
 <html>
     <head>
         <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
@@ -19,18 +19,24 @@
         </section>
         
         <section id="mainSection">  
-            <h1>Welcome to the Mongus Group Chat for Semester 1 2023!!</h1>
-            <h2>This assigned topic is designated to Game Of Thrones</h2>
-            <div name="ChatBox" >
-                <div class="members-count">-</div>
-                <div class="members-list">-</div>
-                <div class="messages"></div>
-                <form class="message-form" onsubmit="return false;">
-                    <input class="message-form__input" placeholder="Type a message.." type="text"/>
-                    <input class="message-form__button" value="Send" type="submit"/>
-                </form>
-                <script type='text/javascript' src='groupchat.js'></script>
+            <div id="heading">
+                <h1> Welcome to the Mongus Group Chat for Semester 1 2023!! </h1>
+                <h2 id="topic">Topic: Game of Thrones</h2>
+            </div>
+            <div name="ChatBox">
+                <fieldset class="form_details">
+                    <legend>Chat Box <br></legend>
+                    <div class="members-count">-</div>
+                    <div class="members-list">-</div>
+                    <div class="messages"></div>
+                    <form class="message-form" onsubmit="return false;">
+                        <input class="message-form__input" placeholder="Type a message.." type="text"/>
+                        <input class="message-form__button" value="Send" type="submit"/>
+                    </form>
+                    <script type='text/javascript' src='groupchat.js'></script>
+                </fieldset>
             </div>
         </section>
     </body>    
 </html>
+
