@@ -79,3 +79,123 @@ body {
     background: rgb(159, 90, 6);
     color:white;
 }
+
+/*Aleks Code Start*/
+
+a {text-decoration: none;}
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Montserrat';
+font-style: normal;
+}
+
+p {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 35px;
+}
+
+.center {text-align: center;}
+.yellow {background-color: #F6E75A; padding: 15px;}
+.margintop5 {margin-top: 5%;}
+
+/* inspired by https://www.w3schools.com/css/css_form.asp */
+input[type=email], input[type=password], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+font-style: normal;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #77dbf3;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Montserrat';
+font-style: normal;
+}
+
+input[type=submit]:hover {
+  background-color: #000;
+}
+
+/*table properties*/
+/* inspired by https://www.w3schools.com/css/tryit.asp?filename=trycss_table_fancy */
+.chattable {
+  font-family: inherit;
+  border-collapse: collapse;
+  width: 100%;
+    font-family: 'Montserrat';
+font-style: normal;
+}
+
+.chattable td {
+  border: 3px solid #000;
+  padding: 30px;
+}
+
+.chattable tr {background-color: #F6E75A;} /* every 2nd row inherits color .chattable tr:nth-child(even){background-color: #f2f2f2;} */
+.chattable tr:hover {background-color: #fff;}
+
+.chattable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+/*buttons style*/
+/* secondary button custom style */
+.secondary { /* button in the table */
+border: 1px solid #000;
+padding: 16px 40px;
+color: #000;
+transition-duration: 0.3s; /* animation duration inspired by https://css-tricks.com/css-link-hover-effects/ */
+text-align: center;
+font-size: 20px;
+font-family: 'Montserrat';
+border-radius: 8px;
+font-weight: 500;
+}
+
+.secondary:hover {
+background: #000;
+color: #F6E75A;
+border: 1px solid #000;
+box-shadow: 0px 4px 12px -4px rgb(32 36 32 / 85%); /* add dark shadow animation inspired by https://css-tricks.com/css-link-hover-effects/ */
+transform: scale(1.2);
+}
+
+.primary { /* main button under the table */
+background: #F0B828;
+padding: 30px 250px;
+transition-duration: 0.3s; /* time how long will it take animation inspired by https://css-tricks.com/css-link-hover-effects/ */
+text-align: center;
+font-size: 25px;
+font-family: 'Montserrat';
+border-radius: 8px;
+border: 1px solid #F0B828;
+color: #000;
+font-weight: 500;
+}
+
+.primary:hover {
+background: #fff;
+border: 1px solid #F0B828;
+box-shadow: 0px 4px 12px -4px rgb(24 160 251 / 45%); /* shadow animation inspired by https://css-tricks.com/css-link-hover-effects/ */
+transform: scale(1.2);
+color: #F0B828;
+}
+/*Aleks Code End*/
