@@ -2,6 +2,8 @@
 <html lnag="en">
 <html>
     <head>
+        <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
+        
         <title>Bookings</title>
         <link rel="stylesheet" href="styles.css">
     </head>
@@ -13,6 +15,13 @@
         <p name="ChatBox" >
             Insert ChatBox Functionality Here
         </p>
-
+        <div class="members-count">-</div>
+        <div class="members-list">-</div>
+        <div class="messages"></div>
+        <form class="message-form" onsubmit="return false;">
+          <input class="message-form__input" placeholder="Type a message.." type="text"/>
+          <input class="message-form__button" value="Send" type="submit"/>
+        </form>
+        <script type='text/javascript' src='groupchat.js'></script>
     </body>    
 </html>
