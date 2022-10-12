@@ -4,23 +4,34 @@
     <head>
         <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
         <title>Bookings</title>
+        <meta charset="utf-8">
         <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     </head>
+<!--- this is where the actual code beigns -->
     <body>
-        <p name="topHeader" src="../websiteChat/images/best-customer-support-chat-apps-00-hero.jpeg"></p>
-            
-        </p>
-        <h1>Welcome to the Group Chat Room</h1>
-        <p name="ChatBox" >
-            Insert ChatBox Functionality Here
-        </p>
-        <div class="members-count">-</div>
-        <div class="members-list">-</div>
-        <div class="messages"></div>
-        <form class="message-form" onsubmit="return false;">
-          <input class="message-form__input" placeholder="Type a message.." type="text"/>
-          <input class="message-form__button" value="Send" type="submit"/>
-        </form>
-        <script type='text/javascript' src='groupchat.js'></script>
+        <section>
+            <div>
+                <img id="banner" src="../mongus/Images/Banner.png" alt ="header">
+            </div>
+            <div id="headerTop">
+                <a id="backButton" href="www.google.com.au" id="back_btn">« Back</a>
+            </div>
+        </section>
+        
+        <section id="mainSection">  
+            <h1>Welcome to the Mongus Group Chat for Semester 1 2023!!</h1>
+            <h2>This assigned topic is designated to Game Of Thrones</h2>
+            <div name="ChatBox" >
+                <div class="members-count">-</div>
+                <div class="members-list">-</div>
+                <div class="messages"></div>
+                <form class="message-form" onsubmit="return false;">
+                    <input class="message-form__input" placeholder="Type a message.." type="text"/>
+                    <input class="message-form__button" value="Send" type="submit"/>
+                </form>
+                <script type='text/javascript' src='groupchat.js'></script>
+            </div>
+        </section>
     </body>    
 </html>
