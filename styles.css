@@ -14,6 +14,10 @@ font-size: 20px;
 line-height: 35px;
 }
 
+body {
+    background-color: #DCDCDC;
+}
+
 .center {text-align: center;}
 .yellow {background-color: #F6E75A; padding: 15px;}
 .margintop5 {margin-top: 5%;}
