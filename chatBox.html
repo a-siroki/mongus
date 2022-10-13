@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="groupChatPage.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    </head>
+<!--- this is where the actual code beigns -->
+    <body>
+        <section>
+            <div>
+                <img id="banner" src="Images/4.png" alt ="header">
+            </div>
+            <div id="headerTop">
+                <a id="backButton" href="chat-table.html" id="back_btn">« Back</a>
+            </div>
+        </section>
+        
+        <section id="mainSection">  
+            <div id="heading">
+                <h1> Welcome to the Mongus Group Chat for Semester 1 2023!! </h1>
+                <h2 id="topic">Topic: Game of Thrones</h2>
+            </div>
+            <div name="ChatBox">
+                <fieldset class="form_details">
+                    <legend> Come into the Throne Room... </legend>
+                    <div class="members-count">-</div>
+                    <div class="members-list">-</div>
+                    <div class="messages"></div>
+                    <form class="message-form" onsubmit="return false;">
+                        <input class="message-form__input" placeholder="Type a message.." type="text"/>
+                        <input class="message-form__button" value="Send" type="submit"/>
+                    </form>
+                    <script type='text/javascript' src='groupchat.js'></script>
+                </fieldset>
+            </div>
+        </section>
+        <footer>
+            <script src="name.js"></script>
+        </footer>
+    </body>    
+</html>
+
