@@ -17,6 +17,10 @@ line-height: 35px;
 .center {text-align: center;}
 .yellow {background-color: #F6E75A; padding: 15px;}
 .margintop5 {margin-top: 5%;}
+.margintop4 {margin-top: 4%;}
+.margintop3 {margin-top: 3%;}
+.margintop2 {margin-top: 2%;}
+.margintop1 {margin-top: 1%;}
 
 /* inspired by https://www.w3schools.com/css/css_form.asp */
 input[type=email], input[type=password], select {
@@ -86,6 +90,7 @@ font-size: 20px;
 font-family: 'Montserrat';
 border-radius: 8px;
 font-weight: 500;
+display: inline-block; /*asign width to the a href inspired by https://css-tricks.com/forums/topic/how-to-make-each-link-height-and-width-at-25px/*/
 }
 
 .secondary:hover {
@@ -94,11 +99,12 @@ color: #F6E75A;
 border: 1px solid #000;
 box-shadow: 0px 4px 12px -4px rgb(32 36 32 / 85%); /* add dark shadow animation inspired by https://css-tricks.com/css-link-hover-effects/ */
 transform: scale(1.2);
+cursor: pointer;
 }
 
 .primary { /* main button under the table */
 background: #F0B828;
-padding: 30px 250px;
+padding: 30px 0;
 transition-duration: 0.3s; /* time how long will it take animation inspired by https://css-tricks.com/css-link-hover-effects/ */
 text-align: center;
 font-size: 25px;
@@ -107,6 +113,8 @@ border-radius: 8px;
 border: 1px solid #F0B828;
 color: #000;
 font-weight: 500;
+width: 15%;
+display: inline-block; /*asign width to the a href inspired by https://css-tricks.com/forums/topic/how-to-make-each-link-height-and-width-at-25px/*/
 }
 
 .primary:hover {
@@ -115,5 +123,78 @@ border: 1px solid #F0B828;
 box-shadow: 0px 4px 12px -4px rgb(24 160 251 / 45%); /* shadow animation inspired by https://css-tricks.com/css-link-hover-effects/ */
 transform: scale(1.2);
 color: #F0B828;
+cursor: pointer;
+}
+
+.gotbutton {
+    width: 280px;
+    margin: 0 20px;
+    background-color: #EFB6B6;
+    padding: 50px 0px;
+    border: 1px solid #EFB6B6;
+}
+.gotbutton:hover {
+    color: #EFB6B6;
+    transform: scale(1.1); /*reduce scaling effect*/
+}
+
+.formula1 {
+    width: 280px;
+    margin: 0 20px;
+    background-color: #ACD379;
+    padding: 50px 0px;
+    border: 1px solid #ACD379;
+}
+.formula1:hover {
+    color: #ACD379;
+    transform: scale(1.1); /*reduce scaling effect*/
+}
+
+.cooking {
+    width: 280px;
+    margin: 0 20px;
+    background-color: #E4E07C;
+    padding: 50px 0px;
+    border: 1px solid #E4E07C;
+}
+.cooking:hover {
+    color: #E4E07C;
+    transform: scale(1.1); /*reduce scaling effect*/
+}
+
+.workouts {
+    width: 280px;
+    margin: 0 20px;
+    background-color: #B2FEF9;
+    padding: 50px 0px;
+    border: 1px solid #B2FEF9;
+}
+.workouts:hover {
+    color: #B2FEF9;
+    transform: scale(1.1); /*reduce scaling effect*/
+}
+
+.cars {
+    width: 280px;
+    margin: 0 20px;
+    background-color: #F06EF2;
+    padding: 50px 0px;
+    border: 1px solid #F06EF2;
+}
+.cars:hover {
+    color: #F06EF2;
+    transform: scale(1.1); /*reduce scaling effect*/
+}
+
+.spiderman {
+    width: 280px;
+    margin: 0 20px;
+    background-color: #F65A5A;
+    padding: 50px 0px;
+    border: 1px solid #F65A5A;
+}
+.spiderman:hover {
+    color: #F65A5A;
+    transform: scale(1.1); /*reduce scaling effect*/
 }
 /*Aleks Code End*/
