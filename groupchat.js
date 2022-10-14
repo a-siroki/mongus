@@ -80,6 +80,20 @@ const DOM = {
   form: document.querySelector('.message-form'),
 };
 
+
+// const log = document.getElementById('log');
+
+// DOM.input.addEventListener('change', updateValue);
+
+// function updateValue(e) {
+//   const yourLink = e.target.value
+//   const mydiv = document.getElementById("log");
+//   const aTag = document.createElement('a');
+//   aTag.setAttribute('href', yourLink);
+//   aTag.textContent = "link text";
+//   mydiv.appendChild(aTag)
+// }
+
 DOM.form.addEventListener('submit', sendMessage);
 
 function sendMessage() {
