@@ -2,7 +2,7 @@ const CLIENT_ID = 'Q7oVtf8U6ab5x2cf';
 
 const drone = new ScaleDrone(CLIENT_ID, {
   data: { // Will be sent out as clientData via events
-    name: getName(),
+    name: getRandomName(),
     color: getRandomColor(),
   },
 });
@@ -56,11 +56,13 @@ drone.on('error', error => {
   console.error(error);
 });
 
-function getName() {
-  Fname = document.getElementById('userInputFname')
-  Lname = document.getElementById('userInputLname')
+function getRandomName() {
+  const Fname = ["John", "Sean", "Jeffrey", "Ben", "Dean", "Harry", "Adrian", "Michael", "John-Uhn", "Obama", "Vladimir", "Lohhny", "Arnold", "Yomum", "Dwayne", "Sasha", "Daisy", "Mia", "Lana"];
+  const Lname = ["Smith", "Di Mario", "Ang", "Wang", "Raj", "Ladesh", "Coutin", "Chang", "Mao", "Chong", "Doe", "Hale", "Morales", "Norris", "Morris", "Johnson", "White", "Malkova", "Rhodes","Depp" ];
   return (
-    Fname + " " + Lname
+    Fname[Math.floor(Math.random() * Fname.length)] +
+    " " +
+    Lname[Math.floor(Math.random() * Lname.length)]
   );
 }
 
@@ -78,19 +80,6 @@ const DOM = {
   form: document.querySelector('.message-form'),
 };
 
-
-// const log = document.getElementById('log');
-
-// DOM.input.addEventListener('change', updateValue);
-
-// function updateValue(e) {
-//   const yourLink = e.target.value
-//   const mydiv = document.getElementById("log");
-//   const aTag = document.createElement('a');
-//   aTag.setAttribute('href', yourLink);
-//   aTag.textContent = "link text";
-//   mydiv.appendChild(aTag)
-// }
 
 DOM.form.addEventListener('submit', sendMessage);
 
@@ -139,8 +128,3 @@ function addMessageToListDOM(text, member) {
     el.scrollTop = el.scrollHeight - el.clientHeight;
   }
 }
-
-
-
-// const Fname = ["John", "Sean", "Jeffrey", "Ben", "Dean", "Harry", "Adrian", "Michael", "John-Uhn", "Obama", "Vladimir", "Lohhny", "Arnold", "Yomum", "Dwayne", "Sasha", "Daisy", "Mia", "Lana"];
-//   const Lname = ["Smith", "Di Mario", "Ang", "Wang", "Raj", "Ladesh", "Coutin", "Chang", "Mao", "Chong", "Doe", "Hale", "Morales", "Norris", "Morris", "Johnson", "White", "Malkova", "Rhodes","Depp" ];
