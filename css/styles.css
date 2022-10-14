@@ -35,6 +35,19 @@ input[type=email], input[type=password], select {
 font-style: normal;
 }
 
+input[type=text] {
+  width: 400px;
+  height: 70px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+font-style: normal;
+}
+
 input[type=submit] {
   width: 100%;
   background-color: #77dbf3;
