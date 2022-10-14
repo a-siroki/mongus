@@ -5,3 +5,69 @@ font-family: 'Montserrat';
 font-style: normal;
 }
 
+body {
+    margin: 5%;
+    background-color: #dcdcdc;
+}
+
+legend {
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 10px;
+    background: #F98404;
+    padding: 0.5em;
+    margin: 0% 1%;
+    font-size: 'Montserrat';
+}
+
+#survey1 {
+    text-align: center;
+}
+
+fieldset {
+    background-color: white;
+    border-radius: 2em;
+    font-family: 'Montserrat';
+    font-size: 20px;  
+}
+
+#OutsideForm {
+    font-size: 35px;
+}
+
+.content {
+    margin-bottom: 2%;
+}
+
+#submit_btn {
+    border-radius: 1em;
+    text-decoration: none;
+    padding: 0.5em;
+    font-size: 29px;
+    font-family: 'Montserrat';
+    background-color:#F98404;
+    width: auto;
+    width: 10%;
+    margin-left:auto;
+    margin-right:auto;
+    color: black;
+}
+
+#submit_btn:hover {
+    background-color: black;
+    transition: 0.3s;
+    color: white;   
+}
+
+input {
+    width: 30%;
+    height: 3vh;
+    font-size: 20px;    
+}
+
+#submit {
+    margin-bottom: 10%;
+}
+
+
