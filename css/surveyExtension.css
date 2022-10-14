@@ -6,8 +6,27 @@ font-style: normal;
 }
 
 body {
+    font-family: 'Montserrat';
     margin: 5%;
-    background-color: #dcdcdc;
+    background-color: #DCDCDC;
+    text-align: center;
+}
+
+fieldset {
+    background-color: white;
+    border-radius: 1em;
+    font-size: 20px;
+    height: 40vh;
+
+}
+
+.likert li {
+    float: left;
+    list-style-type: none;
+}
+
+#leadership, #extrovertness, #group_admin {
+    margin-bottom: 5%;
 }
 
 legend {
@@ -21,26 +40,15 @@ legend {
     font-size: 'Montserrat';
 }
 
-#survey1 {
+#survey2 {
     text-align: center;
 }
 
-fieldset {
-    background-color: white;
-    border-radius: 2em;
-    font-family: 'Montserrat';
-    font-size: 20px;  
+.myUL {
+    margin-left: 38%;
 }
 
-#OutsideForm {
-    font-size: 35px;
-}
-
-.content {
-    margin-bottom: 2%;
-}
-
-#submit_btn {
+#submit {
     border-radius: 1em;
     text-decoration: none;
     padding: 0.5em;
@@ -54,21 +62,9 @@ fieldset {
     color: black;
 }
 
-#submit_btn:hover {
+#submit:hover {
     background-color: black;
     transition: 0.3s;
     color: white;   
 }
-
-input {
-    width: 30%;
-    height: 3vh;
-    font-size: 20px;    
-}
-
-#submit {
-    margin-bottom: 10%;
-}
-
-
 

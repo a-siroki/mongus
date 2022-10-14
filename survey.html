@@ -5,54 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/survey.css">
     <title>Document</title>
 </head>
 <body>
     <section id="survey1">
-        <h1>
-            Welcome to the chat <span id="name"></span>! Please submit your responses to this survey.
+        <h1 id="OutsideForm">
+            Hello there!<br>
+            Please fill in the following form for us to allocate you into a group chat!
         </h1>
         <fieldset id="survey">
             <legend>
                 Fill in the following form for us to place you into a suitable group!
             </legend>
             <form>
-                <div id="interestSelect">
+                <div class="content" id="interestSelect">
                     <p>
                         What your top 3 hobbies/ areas of interests?
                     </p>
                     <span>
                         1. <input> 
-                    </span><br>
+                    </span><br><br>
                     <span>
                         2. <input>
-                    </span><br>
+                    </span><br><br>
                     <span>
                         3. <input>
-                    </span><br>
+                    </span><br><br>
                     
                 </div>
-                <div id="hobbies">
-                    <label for="hobbies">What is your hobby?</label><br>
+                <div class="content" id="hobbies">
+                    <label for="hobbies">What is your hobby?</label><br><br>
                     <input type="hobbies"><br>
                 </div>
-                <div id="top3Activities">
+                <div class="content" id="top3Activities">
                     <label for="activities">Please rate the top 3 UQ activities you are looking most forward to completing this semseter.<br> 
                         (E.g. Sporting, Balls, Networking events)
-                    </label><br>
+                    </label><br><br>
                     <span>
                         1. <input> 
-                    </span><br>
+                    </span><br><br>
                     <span>
                         2. <input>
-                    </span><br>
+                    </span><br><br>
                     <span>
                         3. <input>
-                    </span><br>
+                    </span><br><br><br>
+                    <span id="submit">
+                        <a href="survey2.html" id="submit_btn">
+                            Submit
+                        </a>
+                    </span>
                 </div>
             </form>
         </fieldset>
-        <button id="submit_btn"><a href="survey2.html">Submit</a></button>
     </section>
     <footer>
         <script src="name.js"></script>
