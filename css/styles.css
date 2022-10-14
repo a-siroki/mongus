@@ -1,4 +1,8 @@
 /*Aleks Code Start*/
+body {
+  margin-left: 5%;
+  margin-right: 5%;
+}
 
 a {text-decoration: none;}
 h1, h2, h3, h4, h5, h6 {
@@ -14,8 +18,11 @@ font-size: 20px;
 line-height: 35px;
 }
 
+.yellow {
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
 .center {text-align: center;}
-.yellow {background-color: #F6E75A; padding: 15px;}
 .margintop5 {margin-top: 5%;}
 .margintop4 {margin-top: 4%;}
 .margintop3 {margin-top: 3%;}
@@ -30,6 +37,20 @@ input[type=email], input[type=password], select {
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+font-style: normal;
+}
+
+input[type=text] { /*chat table search field*/
+  width: 400px;
+  height: 70px;
+  font-size: 20px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
   box-sizing: border-box;
   font-family: 'Montserrat';
 font-style: normal;
@@ -79,6 +100,29 @@ font-style: normal;
 }
 
 /*buttons style*/
+/* search button on chat table page */
+.searchbutton {
+background: #000;
+transition-duration: 0.3s; /* time how long will it take animation inspired by https://css-tricks.com/css-link-hover-effects/ */
+text-align: center;
+font-family: 'Montserrat';
+border-radius: 8px;
+border: 1px solid #F0B828;
+color: #F0B828;
+font-weight: 500;
+  width: 70px;
+  height: 70px;
+}
+
+.searchbutton:hover {
+background: #fff;
+border: 1px solid #F0B828;
+box-shadow: 0px 4px 12px -4px rgb(24 160 251 / 45%); /* shadow animation inspired by https://css-tricks.com/css-link-hover-effects/ */
+transform: scale(1.05);
+color: #F0B828;
+cursor: pointer;
+}
+
 /* secondary button custom style */
 .secondary { /* button in the table */
 border: 1px solid #000;
