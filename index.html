@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
     <head>
         <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
         <title>Bookings</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="groupChatPage.css">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/welcome.css">
     </head>
-<!--- this is where the actual code beigns -->
     <body>
-        <section>
-            <div>
-                <img id="banner" src="Images/Banner.png" alt ="header">
-            </div>
-            <div id="headerTop">
-                <a id="backButton" href="chat-table.html" id="back_btn">« Back</a>
-            </div>
-        </section>
-        
-        <section id="mainSection">  
-            <div id="heading">
-                <h1> Welcome to the Mongus Group Chat for Semester 1 2023!! </h1>
-                <h2 id="topic">Topic: Game of Thrones</h2>
-            </div>
-            <div name="ChatBox">
-                <fieldset class="form_details">
-                    <legend> Come into the Throne Room... </legend>
-                    <div class="members-count">-</div>
-                    <div class="members-list">-</div>
-                    <div class="messages"></div>
-                    <form class="message-form" onsubmit="return false;">
-                        <input class="message-form__input" placeholder="Type a message.." type="text"/>
-                        <input class="message-form__button" value="Send" type="submit"/>
-                    </form>
-                    <script type='text/javascript' src='groupchat.js'></script>
-                </fieldset>
-            </div>
-        </section>
-    </body>    
+        <img id="MLogo" src="Images/LogoTransperent.png" alt="header">
+        <section class="animation_arrow">
+            <a href="#menu_screen">
+                <div class="arrow">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </a>
+            <fieldset id="menu_screen">
+                <legend>Sign Up Here!</legend>
+                <section class="formFill">
+                    <div id ="email">
+                        <p>
+                            Please enter your username (e.g. s1234567@uq.edu.au):
+                        </p>
+                        <span>
+                            <input id="uqEmail" class="btn">
+                        </span>
+                    </div><br>
+                    <div>
+                        <label>
+                            Please enter your first and last name:
+                        </label><br>
+                        <span>
+                            <input class="btn" id="userInput" type="text">
+                        </span>
+                    </div>
+                    <div class="login_button">
+                        <p>
+                            Please input your password:
+                        </p>
+                    <span>
+                        <input class ="btn" type="Password">
+                    </span>
+                    </div>
+                    <a id="button" href="survey.html">Login</a>
+                </section>
+            </fieldset>
+        <footer>
+            
+        </footer>
+    </body>
 </html>
 
