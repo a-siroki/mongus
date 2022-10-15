@@ -4,7 +4,105 @@ body {
   margin-right: 5%;
 }
 
+img {
+width: 100%;
+height: auto;
+}
+
+/* Community page 
+flex box inspired by https://codepen.io/abbeyjfitzgerald/pen/LWXWYb and https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_four_columns*/
+
+.community-desc { /* paragraph smaller */
+    font-size: 15px;
+    line-height: 2;
+}
+
+.community-cta { /* More details padding */
+    padding-top: 10px;
+}
+
+.categories-flex {
+max-width: 100%;
+flex-wrap: wrap;
+flex-direction: column;
+}
+
+.categories-img img {
+max-width: 400px;
+}
+
+.display-flex {
+display: flex;
+justify-content: center;
+margin: 0 auto;
+flex-wrap: wrap;
+flex-direction: inherit;
+row-gap: 50px;
+}
+
+.offer-content {
+background-color: #FBFBFB;
+margin: -30px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 2%;
+border-radius: 8px;
+max-width: 399px;
+flex-wrap: nowrap;
+}
+
+/* End Community page */
+
+/*Community page discussion */
+.container {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+.time-left {
+  float: left;
+  color: #999;
+}
+
+
 a {text-decoration: none;}
+a.orangelink {color: #F98404;}
+
 h1, h2, h3, h4, h5, h6 {
 font-family: 'Montserrat';
 font-style: normal;
@@ -28,6 +126,8 @@ line-height: 35px;
 .margintop3 {margin-top: 3%;}
 .margintop2 {margin-top: 2%;}
 .margintop1 {margin-top: 1%;}
+
+.marginbottom3 {margin-bottom: 3%;}
 
 /* inspired by https://www.w3schools.com/css/css_form.asp */
 input[type=email], input[type=password], select {
@@ -88,7 +188,7 @@ font-style: normal;
   padding: 30px;
 }
 
-.chattable tr {background-color: #F6E75A;} /* every 2nd row inherits color .chattable tr:nth-child(even){background-color: #f2f2f2;} */
+.chattable tr {background-color: #F98404;} /* every 2nd row inherits color .chattable tr:nth-child(even){background-color: #f2f2f2;} */
 .chattable tr:hover {background-color: #fff;}
 
 .chattable th {
@@ -139,7 +239,7 @@ display: inline-block; /*asign width to the a href inspired by https://css-trick
 
 .secondary:hover {
 background: #000;
-color: #F6E75A;
+color: #F98404;
 border: 1px solid #000;
 box-shadow: 0px 4px 12px -4px rgb(32 36 32 / 85%); /* add dark shadow animation inspired by https://css-tricks.com/css-link-hover-effects/ */
 transform: scale(1.2);
@@ -147,18 +247,17 @@ cursor: pointer;
 }
 
 .primary { /* main button under the table */
-background: #F0B828;
-padding: 30px 0;
-transition-duration: 0.3s; /* time how long will it take animation inspired by https://css-tricks.com/css-link-hover-effects/ */
-text-align: center;
-font-size: 25px;
-font-family: 'Montserrat';
-border-radius: 8px;
-border: 1px solid #F0B828;
-color: #000;
-font-weight: 500;
-width: 15%;
-display: inline-block; /*asign width to the a href inspired by https://css-tricks.com/forums/topic/how-to-make-each-link-height-and-width-at-25px/*/
+    border-radius: 1em;
+    text-decoration: none;
+    padding: 0.5em;
+    font-size: 29px;
+    font-family: 'Montserrat';
+    background-color: #F98404;
+    width: auto;
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
 }
 
 .primary:hover {
