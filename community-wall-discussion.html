@@ -5,6 +5,7 @@
         <meta charset="utf-8">
 <!-- viewport - follow the screen width https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
         <title>Community wall</title>
         <link rel="stylesheet" href="css/styles.css">
     </head>
@@ -56,10 +57,34 @@
   <span class="time-left">11:05</span>
 </div>
 
-        <section class="center margintop3">
-            <a class="primary" href="#">Join Discussion</a>
-        </section>
+<!-- trigger chat discussion popup chat --> 
+<section class="center margintop3 marginbottom3">
+<a class="primary" onclick="openForm()">Join Discussion</a>
+</section>
 
+<!-- popup message -->
+<div class="chat-popup" id="myForm">
+  <form class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type a message" name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send Message</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">X Close</button>
+  </form>
+</div>
+
+<!-- necessary functions for a popup -->
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
     </body>    
 </html>
 
