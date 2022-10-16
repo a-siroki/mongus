@@ -2,7 +2,7 @@ const CLIENT_ID = 'Q7oVtf8U6ab5x2cf';
 
 const drone = new ScaleDrone(CLIENT_ID, {
   data: { // Will be sent out as clientData via events
-    name: getName(),
+    name: getFullName(),
     color: getRandomColor(),
   },
 });
@@ -56,12 +56,11 @@ drone.on('error', error => {
   console.error(error);
 });
 
-function getName() {
-  Fname = document.getElementById('userInputFname')
-  Lname = document.getElementById('userInputLname')
-  return (
-    Fname + " " + Lname
-  );
+function getFullName() {
+    const Fname = localStorage.getItem("Fname");
+    const Lname = localStorage.getItem("Lname");
+
+    return Fname + " " + Lname;
 }
 
 function getRandomColor() {
@@ -129,6 +128,21 @@ function createMessageElement(text, member) {
   el.appendChild(document.createTextNode(text));
   el.className = 'message';
   return el;
+}
+
+function replaceURLs(urlmsg) {
+  
+  if(!urlmsg) return;
+ 
+  var urlRegex = /(((https?:\/\/)|(www\.))[^\s]+)/g;
+  urlmsg = urlmsg.replace(urlRegex, function (url) {
+    var hyperlink = url;
+    if (!hyperlink.match('^https?:\/\/')) {
+      hyperlink = 'http://' + hyperlink;
+    }
+    urlmsg ='<a href="' + hyperlink + '" target="_blank" rel="noopener noreferrer">' + url + '</a>'
+    return createMessageElement(urlmsg, createMemberElement(member));
+  });
 }
 
 function addMessageToListDOM(text, member) {

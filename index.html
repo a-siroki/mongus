@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
-        <script type='text/javascript' src="js/groupchat.js"></script>
+        <script type='text/javascript' src="js/welcome.js"></script>
         <title>Bookings</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/welcome.css">
@@ -20,39 +20,43 @@
             <fieldset id="menu_screen">
                 <legend>Sign Up Here!</legend>
                 <section class="formFill">
-                    <div id ="email">
-                        <p>
-                            Please enter your username (e.g. s1234567@uq.edu.au):
-                        </p>
+                    <form>
+                        <div id ="email">
+                            <p>
+                                Please enter your username (e.g. s1234567@uq.edu.au):
+                            </p>
+                            <span>
+                                <input id="uqEmail" class="btn">
+                            </span>
+                        </div><br>
+                        <div> 
+                            <label>
+                                First name:
+                            </label><br>
+                            <span>
+                                <input class="btn" id="userInputFname" type="text">
+                            </span>
+                        </div>
+                        <div>
+                            <label>
+                                Last name:
+                            </label><br>
+                            <span>
+                                <input class="btn" id="userInputLname" type="text">
+                            </span>  
+                        </div>
+                    
+                        <div class="login_button">
+                            <p>
+                                Please input your password:
+                            </p>
                         <span>
-                            <input id="uqEmail" class="btn">
+                            <input class ="btn" type="Password">
                         </span>
-                    </div><br>
-                    <div>
-                        <label>
-                            First name:
-                        </label><br>
-                        <span>
-                            <input class="btn" id="userInputFname" type="text">
-                        </span>
-                    </div>
-                    <div>
-                        <label>
-                            Last name:
-                        </label><br>
-                        <span>
-                            <input class="btn" id="userInputLname" type="text">
-                        </span>
-                    </div>
-                    <div class="login_button">
-                        <p>
-                            Please input your password:
-                        </p>
-                    <span>
-                        <input class ="btn" type="Password">
-                    </span>
-                    </div>
-                    <a id="button" href="survey.html">Login</a>
+                        </div>
+                        <input id="loginbutton" type='submit' onclick ="getName(); nextpageOnAlert();">
+                        <!-- <a id="loginbutton" href="survey.html">Next</a>           -->
+                    </form>   
                 </section>
             </fieldset>
         <footer>
