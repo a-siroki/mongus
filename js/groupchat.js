@@ -130,21 +130,6 @@ function createMessageElement(text, member) {
   return el;
 }
 
-function replaceURLs(urlmsg) {
-  
-  if(!urlmsg) return;
- 
-  var urlRegex = /(((https?:\/\/)|(www\.))[^\s]+)/g;
-  urlmsg = urlmsg.replace(urlRegex, function (url) {
-    var hyperlink = url;
-    if (!hyperlink.match('^https?:\/\/')) {
-      hyperlink = 'http://' + hyperlink;
-    }
-    urlmsg ='<a href="' + hyperlink + '" target="_blank" rel="noopener noreferrer">' + url + '</a>'
-    return createMessageElement(urlmsg, createMemberElement(member));
-  });
-}
-
 function addMessageToListDOM(text, member) {
   const el = DOM.messages;
   const wasTop = el.scrollTop === el.scrollHeight - el.clientHeight;
@@ -154,7 +139,20 @@ function addMessageToListDOM(text, member) {
   }
 }
 
-
+// function replaceURLs(urlmsg) {
+  
+//   if(!urlmsg) return;
+ 
+//   var urlRegex = /(((https?:\/\/)|(www\.))[^\s]+)/g;
+//   urlmsg = urlmsg.replace(urlRegex, function (url) {
+//     var hyperlink = url;
+//     if (!hyperlink.match('^https?:\/\/')) {
+//       hyperlink = 'http://' + hyperlink;
+//     }
+//     urlmsg ='<a href="' + hyperlink + '" target="_blank" rel="noopener noreferrer">' + url + '</a>'
+//     return createMessageElement(urlmsg, createMemberElement(member));
+//   });
+// }
 
 // const Fname = ["John", "Sean", "Jeffrey", "Ben", "Dean", "Harry", "Adrian", "Michael", "John-Uhn", "Obama", "Vladimir", "Lohhny", "Arnold", "Yomum", "Dwayne", "Sasha", "Daisy", "Mia", "Lana"];
 //   const Lname = ["Smith", "Di Mario", "Ang", "Wang", "Raj", "Ladesh", "Coutin", "Chang", "Mao", "Chong", "Doe", "Hale", "Morales", "Norris", "Morris", "Johnson", "White", "Malkova", "Rhodes","Depp" ];

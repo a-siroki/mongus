@@ -128,4 +128,59 @@ background-color:#F98404;
 padding: 1%;
 border: none;
 }
+
+.message-form__button:hover {
+  color: white;
+  background-color: rgb(159,90,6);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropbtn{
+  font-size: 20px;
+  border-radius: 10px;
+  background-color:#F98404;
+  margin-top: 20%;
+  padding: 19.9%;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover {
+  color: white;
+  background-color: rgb(159,90,6);
+  transition: 0.5s;
+}
+
+.dropdown-images {
+  display: none;
+  padding: 10px 5px;
+  border-radius: 10px;
+  position: absolute;
+  background-color: #F98404;
+  width: 300px;
+  box-shadow: 0px 8px 16px 
+  0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-images {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 15px 10px;
+  margin-top: 5px;
+}
+
+.dropdown-images img {
+  width: 45%;
+  height: 100%;
+  cursor: pointer;
+}
+
+
 /*Chat box page finishes*/

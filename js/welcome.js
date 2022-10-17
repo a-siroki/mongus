@@ -21,7 +21,7 @@ function getName() {
   }
 
 function nextpageOnAlert() {
-    document.location.href='survey.html';
-    window.alert('Sign Up Sucessfull');
-    
+    window.alert('Sign Up Sucessfull');  
+    window.location.href = "survey.html";
+
   }
