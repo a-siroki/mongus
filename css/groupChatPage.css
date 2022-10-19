@@ -6,7 +6,8 @@ h1 {
 }
 
 body {
-  background-image: url(/Images/backgroundWallPaper.png);
+  background-image: url('backgroundWallPaper.png');
+  
   background-repeat: no-repeat;
   background-size: cover;
 }
