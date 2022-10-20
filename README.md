@@ -2,32 +2,32 @@
   ![Github licence](http://img.shields.io/badge/license-MIT-blue.svg)
 
   ## Description 
-  This application was created to generate a high-quality, professional README depending on a series of questions a user answers in their command line using Node.js
+  This application was created to generate a high-quality, professional program for individuals to culturally integrate into the UQ society. Documenatation has been provided for individuals to follow through the iterative design process. Initial research was completed before our initial design concept was completed. Furthermore, user testing was completed through the entire project so that we ensured that we were creating a prototype for users and not ourselves.
 
   ## Table of Contents
-  * [Installation](#installation)
-  * [Usage](#usage)
-  * [License](#license)
-  * [Contributing](#contributing)
-  * [Tests](#tests)
-  * [Questions](#questions)
-  
-  ## Installation 
-  The user should clone the repository from GitHub and download Node. This application also requires a file system and inquirer module. 
+  * [Usage](#Usage)
+  * [Contributors](#contributors)
+  * [Documentation](#documentations)
+
+  ## Documentation
+  * Design Proces - https://github.com/a-siroki/mongus/wiki/Our-Design-Process 
+  * Ongoing Documentation - https://github.com/a-siroki/mongus/wiki/Ongoing-Documentation
 
   ## Usage 
-  Use inquirer from your command line to answer questions about your project.
-  <img src="utils/README-GENERATOR (1).gif"><br>
-  Or view link here - [Screencastify](https://drive.google.com/file/d/1L59uBnHWqkOiv5k9UkQEpBJuVX4CRidP/view)
+  User will require cloning of this git repo before opening up the html files.
+  1. Go into command prompt/ terminal.
+  2. Type in "Git Clone https://github.com/a-siroki/mongus.git" 
+    - This should clone the latest repository and allow you to open up the web application.
+    - Alternatively, you can download the entire repository by clickin "Code" and selecting the download zip file.
+  3. Upon unzipping the file, open the index.html.
+  4. Please make sure that all details of the form is completed before submitting to the next form. Your name will be a key aspect of the implmentation of the prototype. Without this, the web application WILL NOT WORK properly.
 
-  ## License 
-  This project is license under MIT
+  ## Contributors
+  * Caleb Ang
+  * Yash Sharma
+  * Sean Di Mario
+  * Sergey Gerasimov 
+  * Aleks Siroski
+  * Hazeem Suffian
 
-  ## Contributing 
-  Contributors should read the installation section. 
-
-  ## Tests
-  npm test
-
-  ## Questions
-  If you have any questions about this projects, please contact me directly at nicole.elisaw@gmail.com. You can view more of my projects at https://github.com/nicolewallace09.
+  
