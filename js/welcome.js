@@ -3,15 +3,18 @@ function getName() {
     if (element != null){
       Fname = element.value;
     }
-    else {
-      alert("Please input your first name");
+    
+    if(Fname == "") {
+      window.alert("Please input your first name");
     }
+    
     const element2 = document.getElementById('userInputLname');
     if (element2 != null){
       Lname = element2.value;
     }
-    else {
-      alert("Please input your last name");
+
+    if(Lname == "") {
+      window.alert("Please input your last name");
     }
     
     localStorage.setItem("Fname", Fname);
@@ -21,7 +24,8 @@ function getName() {
   }
 
 function nextpageOnAlert() {
+  if(Fname && Lname != " ") {
     window.alert('Sign Up Sucessfull');  
     window.location.href = "survey.html";
-
-  }
+  } 
+}
