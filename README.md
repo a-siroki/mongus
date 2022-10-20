@@ -28,7 +28,7 @@
   * Yash Sharma
   * Sean Di Mario
   * Sergey Gerasimov 
-  * Aleks Siroski
+  * Aleks Siroki
   * Hazeem Suffian
 
   
