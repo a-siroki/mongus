@@ -21,6 +21,7 @@
     - Alternatively, you can download the entire repository by clickin "Code" and selecting the download zip file.
   3. Upon unzipping the file, open the index.html.
   4. Please make sure that all details of the form is completed before submitting to the next form. Your name will be a key aspect of the implmentation of the prototype. Without this, the web application WILL NOT WORK properly.
+  5. In order for the social aspect to function, please you will need to provide the same website link to other individuals or simulate this functionality by opening the website in multiple browser tabs.
 
   ## Contributors
   * Caleb Ang
